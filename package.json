@@ -13,11 +13,13 @@
     "fixAll": "npm run format && npm run lintfix",
     "build": "gulp build",
     "dev": "gulp",
-    "fixAndBuild": "npm run fixAll && npm run build"
+    "fixAndBuild": "npm run fixAll && npm run build",
+    "lintfixAndPush": "npm run fixAll && git add . && git commit -m 'подготовили к публикации' && git push"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gulp": "^5.0.0",
     "prettier": "^2.8.7",
     "stylelint": "^15.4.0"
   }
